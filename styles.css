@@ -30,7 +30,7 @@ body {
   min-height: 100vh;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--ink);
-  background: #ffffff;
+  background: var(--sand);
   overflow-x: hidden;
 }
 
@@ -74,6 +74,12 @@ body {
   justify-content: space-between;
   padding: 0 2.5rem;
   z-index: 100;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.nav.is-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
 }
 .nav.nav-scrolled {
   background: rgba(255, 255, 255, 0.95);
@@ -131,6 +137,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
   padding: 0 2rem;
 }
@@ -147,6 +154,7 @@ body {
   z-index: 1;
   max-width: 780px;
   padding: 8rem 0 6rem;
+  text-align: center;
 }
 
 .hero-sub {
@@ -164,12 +172,14 @@ body {
   line-height: 0.9;
   margin-bottom: 1.4rem;
   color: var(--white);
+  position: center;
 }
 
 .hero h1 em {
   display: block;
   font-style: italic;
   color: var(--terracotta);
+  position: center;
 }
 
 .hero-desc {
@@ -177,6 +187,7 @@ body {
   font-size: 1rem;
   line-height: 1.8;
   color: rgba(255,255,255,0.9);
+  position: center;
 }
 .hero-pattern,
 .hero-tifinagh,
@@ -188,3 +199,28 @@ body {
 .scroll-line {
   display: none;
 }
+
+.section {
+  padding: 5rem 2rem;
+  background: var(--sand);
+}
+
+.section-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section h1 {
+  margin-bottom: 1.25rem;
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  color: var(--ink);
+}
+
+.section p {
+  max-width: 42rem;
+  line-height: 1.8;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+
