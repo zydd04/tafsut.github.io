@@ -1,7 +1,9 @@
 :root {
-  --sans: 'Times New Roman', Times, serif;
+  --sans: 'Verdana', serif;
   --white: #ffffff;
   --ink: #333333;
+  --orange: #e67e39;
+  --grey: #f0f0f079;
 }
 
 body {
@@ -22,6 +24,44 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+.nav-bar{
+  display: flex;
+  align-items: center;
+  
+}
+
+.nav-bar-element{
+  margin: 0 15px;
+  text-decoration: none;
+  color: var(--grey);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links {
+  display: flex;          /* This aligns the list items horizontally */
+  list-style: none;       /* Removes the bullet points */
+  margin: 0;
+  padding: 0;
+  align-items: center;    /* Vertically centers links with the logo */
+}
+
+.nav-links li {
+  margin-left: 20px;      /* Spacing between the menu items */
+}
+
+/* Ensure your nav-bar-element (the <a> tag) is visible */
+.nav-bar-element {
+  text-decoration: none;
+  color: var(--ink);      /* Changed from var(--grey) which was almost invisible */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-bar-element:hover {
+  color: var(--orange);   /* Adds a nice hover effect */
 }
 
 .nav-logo {
