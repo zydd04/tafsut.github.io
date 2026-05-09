@@ -203,17 +203,20 @@ body {
 .section {
   padding: 5rem 2rem;
   background: var(--sand);
+  text-align: center;
 }
 
 .section-content {
   max-width: 900px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .section h1 {
   margin-bottom: 1.25rem;
   font-size: clamp(2rem, 3vw, 3.5rem);
   color: var(--ink);
+  text-align: center;
 }
 
 .section p {
@@ -221,6 +224,7 @@ body {
   line-height: 1.8;
   color: var(--muted);
   font-size: 1.05rem;
+  text-align: center;
 }
 
 
