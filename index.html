@@ -1,91 +1,99 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tafsut — ⵜⴰⴼⵙⵓⵜ</title>
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-</head>
-<body>
+﻿  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tafsut — ⵜⴰⴼⵙⵓⵜ</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
 
-<nav class="nav">
-  <a href="#" class="nav-logo">
-    <span class="symbol">ⵣ</span><span class="letter-blue">T</span><span class="letter-green">a</span><span class="letter-yellow">f</span><span class="letter-blue">s</span><span class="letter-green">u</span><span class="letter-yellow">t</span><span> - </span>
-    <span class="tif-logo"><span class="letter-blue">ⵜ</span><span class="letter-green">ⴰ</span><span class="letter-yellow">ⴼ</span><span class="letter-blue">ⵙ</span><span class="letter-green">ⵓ</span><span class="letter-yellow">ⵜ</span></span><span class="symbol">ⵣ</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#history" class="nav-bar-element">History</a></li>
-    <li><a href="#languages" class="nav-bar-element">Languages</a></li>
-    <li><a href="#map" class="nav-bar-element">Interactive Map</a></li>
-    <li><a href="#folklore" class="nav-bar-element">Folklore</a></li>
-    <li><a href="#people" class="nav-bar-element">People</a></li>
-    <li><a href="#about" class="nav-bar-element">About</a></li>
-  </ul>
-  <button class="nav-toggle" id="navToggle">☰</button>
-</nav>
+  <nav class="nav">
+    <a href="#" class="nav-logo">
+      <span class="symbol">ⵣ</span><span class="letter-blue">T</span><span class="letter-green">a</span><span class="letter-yellow">f</span><span class="letter-blue">s</span><span class="letter-green">u</span><span class="letter-yellow">t</span><span> - </span>
+      <span class="tif-logo"><span class="letter-blue">ⵜ</span><span class="letter-green">ⴰ</span><span class="letter-yellow">ⴼ</span><span class="letter-blue">ⵙ</span><span class="letter-green">ⵓ</span><span class="letter-yellow">ⵜ</span></span><span class="symbol">ⵣ</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#history" class="nav-bar-element">History</a></li>
+      <li><a href="#languages" class="nav-bar-element">Languages</a></li>
+      <li><a href="#map" class="nav-bar-element">Interactive Map</a></li>
+      <li><a href="#folklore" class="nav-bar-element">Folklore</a></li>
+      <li><a href="#people" class="nav-bar-element">People</a></li>
+      <li><a href="#about" class="nav-bar-element">About</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle">☰</button>
+  </nav>
 
-<section class="hero">
-  <div class="hero-inner">
-    <h1>Tafsut<br><em>ⵜⴰⴼⵙⵓⵜ</em></h1>
-    <p class="hero-desc">The History of the Amazigh People of the region of Targuist - Al Hoceima.</p>
-  </div>
-</section>
-
-
-<section class="section bg-blue" id="history">
-  <div class="section-content">
-    <h1>History</h1>
-  </div>
-</section>
-
-
-<section class="section bg-yellow" id="languages">
-  <div class="section-content">
-    <h1>Languages</h1>
-  </div>
-</section>
-
-
-<section class="section bg-ground" id="map">
-  <div class="section-content">
-    <h1>Interactive Map</h1>
-  </div>
-</section>
-
-
-<section class="section bg-blue" id="people">
-  <div class="section-content">
-    <h1>People</h1>
-</section>
-<section class="section bg-yellow" id="folklore">
-  <div class="section-content">
-    <h1>Folklore</h1>
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Tafsut<br><em>ⵜⴰⴼⵙⵓⵜ</em></h1>
+      <p class="hero-desc">The History of the Amazigh People of the region of Targuist - Al Hoceima.</p>
     </div>
-</section>
+  </section>
 
-<section class="section bg-ground" id="about">
-  <div class="section-content">
-    <h1>About</h1>
-  </div>
 
-</footer>
+  <section class="section bg-blue" id="history">
+    <div class="section-content">
+      <h1>History</h1>
+    </div>
+  </section>
 
-<script>
-  const nav = document.querySelector('.nav');
-  let lastScrollY = window.scrollY;
 
-  window.addEventListener('scroll', () => {
-    const currentScrollY = window.scrollY;
+  <section class="section bg-yellow" id="languages">
+    <div class="section-content">
+      <h1>Languages</h1>
+    </div>
+  </section>
 
-    if (currentScrollY > lastScrollY && currentScrollY > 60) {
-      nav.classList.add('is-hidden');
-    } else {
-      nav.classList.remove('is-hidden');
-    }
 
-    lastScrollY = currentScrollY;
-  });
-</script>
-</body>
-</html>
+  <section class="section bg-ground" id="map">
+    <h1>Interactive Map</h1>
+    <iframe
+      id="map-container"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-4.5500%2C34.8500%2C-4.2000%2C35.0500&layer=mapnik&marker=34.9500%2C-4.3700"
+      style="border: 1px solid #ccc;"
+      width="100%"
+      height="600"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </section>
+
+
+  <section class="section bg-blue" id="people">
+    <div class="section-content">
+      <h1>People</h1>
+    </div>
+  </section>
+  <section class="section bg-yellow" id="folklore">
+    <div class="section-content">
+      <h1>Folklore</h1>
+      </div>
+  </section>
+
+  <section class="section bg-ground" id="about">
+    <div class="section-content">
+      <h1>About</h1>
+    </div>
+  </section>
+
+  <script>
+    const nav = document.querySelector('.nav');
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 60) {
+        nav.classList.add('is-hidden');
+      } else {
+        nav.classList.remove('is-hidden');
+      }
+
+      lastScrollY = currentScrollY;
+    });
+  </script>
+  </body>
+  </html>

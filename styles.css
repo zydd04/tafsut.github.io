@@ -227,4 +227,17 @@ body {
   text-align: center;
 }
 
+#map-container {
+  height: 600px;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
 
+#map {
+  padding: 0 !important;
+}
+
+#map h1 {
+  padding: 2rem;
+}
